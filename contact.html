@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>drow-gamer — Contact</title>
+	<link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+	<header>
+		<h1>Contact</h1>
+		<p>Envoyer un message à drow-gamer.</p>
+	</header>
+
+	<nav>
+		<a href="index.html">Retour à l’accueil</a>
+	</nav>
+
+	<main>
+		<section>
+			<h2>Formulaire de contact</h2>
+
+			<p>
+				Utilisez ce formulaire pour me contacter à propos de mes jeux vidéo,
+				signaler un bug, proposer une idée ou simplement échanger.
+			</p>
+
+			<p>
+				Mon adresse e-mail n’est pas affichée publiquement sur ce site.
+				Votre adresse e-mail sera utilisée uniquement pour répondre à votre message.
+			</p>
+
+			<form action="https://api.web3forms.com/submit" method="POST">
+				<input type="hidden" name="redirect" value="https://drowgamer.github.io/blog/thanks.html">
+				<input type="hidden" name="access_key" value="51aef9dc-dbf3-496f-bad3-6e81cde66feb">
+
+				<input type="checkbox" name="botcheck" class="hidden" tabindex="-1" autocomplete="off">
+
+				<p>
+					<label for="name">Votre nom</label><br>
+					<input id="name" name="name" type="text" autocomplete="name" required>
+				</p>
+
+				<p>
+					<label for="email">Votre adresse e-mail</label><br>
+					<input id="email" name="email" type="email" autocomplete="email" required>
+				</p>
+
+				<p>
+					<label for="subject">Sujet</label><br>
+					<input id="subject" name="subject" type="text" required>
+				</p>
+
+				<p>
+					<label for="message">Votre message</label><br>
+					<textarea id="message" name="message" rows="10" required></textarea>
+				</p>
+
+				<p>
+					<button type="submit">Envoyer le message</button>
+				</p>
+			</form>
+		</section>
+	</main>
+
+	<footer>
+		<p>Nombre de visites du blog : <span id="view-counter">chargement...</span></p>
+	</footer>
+
+	<script data-goatcounter="https://dg-blog-ombres-2026.goatcounter.com/count"
+		async src="//gc.zgo.at/count.js"></script>
+
+	<script src="js/main.js"></script>
+</body>
+</html>
