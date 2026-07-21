@@ -33,6 +33,18 @@ section {
 	padding: 1rem;
 }
 
+.cover-section {
+	padding: 0;
+	overflow: hidden;
+}
+
+.cover-image {
+	display: block;
+	width: 100%;
+	height: auto;
+	border-radius: 6px;
+}
+
 h1,
 h2 {
 	margin-top: 0;

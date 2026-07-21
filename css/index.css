@@ -27,6 +27,11 @@ section {
 	padding: 1rem;
 }
 
+.cover-section {
+	padding: 0;
+	overflow: hidden;
+}
+
 .cover-image {
 	display: block;
 	width: 100%;
