@@ -1,73 +1,92 @@
+/* Fistula Mound — marron clair, argent et ivoire.
+   Toutes les surfaces sont claires ; le texte reste fonce pour la lisibilite. */
+:root {
+    --fond: #f4eee5;
+    --texte: #302b26;
+    --marron-clair: #dec3a3;
+    --ivoire: #fffdf6;
+    --argent-clair: #e4e6e9;
+    --argent-bordure: #aeb4bc;
+    --lien: #65452a;
+    --survol: #f0e1ce;
+}
+
 body {
-	font-family: Arial, Verdana, sans-serif;
-	background-color: #f2f2f5;
-	color: #241735;
-	margin: 0;
-	line-height: 1.6;
+    font-family: Arial, Verdana, sans-serif;
+    background-color: var(--fond);
+    color: var(--texte);
+    margin: 0;
+    line-height: 1.6;
 }
 
 header {
-	background-color: #5c3c88;
-	color: #f2f2f5;
-	text-align: center;
-	padding: 2rem 1rem;
+    background-color: var(--marron-clair);
+    color: var(--texte);
+    text-align: center;
+    padding: 2rem 1rem;
+    border-bottom: 3px solid var(--argent-bordure);
 }
 
 nav {
-	max-width: 900px;
-	margin: 1rem auto;
-	padding: 0 1rem;
+    max-width: 900px;
+    margin: 1rem auto;
+    padding: 0 1rem;
 }
 
 main {
-	max-width: 900px;
-	margin: 2rem auto;
-	padding: 0 1rem;
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
 }
 
 section {
-	background-color: #ffffff;
-	border: 2px solid #9c9ca3;
-	border-radius: 8px;
-	margin-bottom: 1.5rem;
-	padding: 1rem;
+    background-color: var(--ivoire);
+    border: 2px solid var(--argent-bordure);
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
 }
 
 .cover-section {
-	padding: 0;
-	overflow: hidden;
+    padding: 0;
+    overflow: hidden;
 }
 
 .cover-image {
-	display: block;
-	width: 100%;
-	height: auto;
-	border-radius: 6px;
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
 }
 
-h1,
-h2 {
-	margin-top: 0;
+h1, h2 {
+    margin-top: 0;
 }
 
-h2 {
-	color: #5c3c88;
+h2, h3 {
+    color: #594633;
 }
 
 a {
-	color: #4d2f78;
-	font-weight: bold;
+    color: var(--lien);
+    font-weight: bold;
+    text-underline-offset: 0.15em;
 }
 
-a:hover,
-a:focus {
-	color: #000000;
-	background-color: #dcdce3;
+a:hover, a:focus-visible {
+    color: #302b26;
+    background-color: var(--survol);
+}
+
+a:focus-visible {
+    outline: 3px solid #65503b;
+    outline-offset: 3px;
 }
 
 footer {
-	text-align: center;
-	background-color: #e5e5eb;
-	color: #241735;
-	padding: 1rem;
+    text-align: center;
+    background-color: var(--argent-clair);
+    color: var(--texte);
+    padding: 1rem;
+    border-top: 2px solid var(--argent-bordure);
 }
